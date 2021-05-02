@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  symp-nginx:
+    image: nginx:latest
+    container_name: symp-nginx 
+    volumes:
+      - ./nginx/custom.conf:/etc/nginx/conf.d/custom.conf
+      - ./nginx/ssl/cert.crt:/etc/ssl/cert.crt 
+      - ./nginx/ssl/private.pem:/etc/ssl/private.pem
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+        - symp
+    restart: always
+    
+networks:
+    symp:
+        external:
+            name: symp
