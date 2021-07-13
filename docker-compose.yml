@@ -8,6 +8,8 @@ services:
       - ./nginx/custom.conf:/etc/nginx/conf.d/custom.conf
       - ./nginx/ssl/cert.crt:/etc/ssl/cert.crt 
       - ./nginx/ssl/private.pem:/etc/ssl/private.pem
+      - ./nginx/ssl_wildcard/cert.crt:/etc/ssl_wildcard/cert.crt
+      - ./nginx/ssl_wildcard/private.pem:/etc/ssl_wildcard/private.pem
     ports:
       - "80:80"
       - "443:443"
