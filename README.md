@@ -34,13 +34,13 @@ https://symp-*your_service_name*.ingress.docker
 
 ## Usage
 
-| Service Name           | Localhost address        | Subdoman address                   |
+| Service Name           | Localhost address        | Subdomain address                  |
 |------------------------|--------------------------|------------------------------------|
 |Client                  | https://localhost/client | https://symp-client.ingress.docker |
 |Analysis Hub Frontend   | https://localhost/ah     | https://symp-ah.ingress.docker     |
 |System Model Engine     | https://localhost/sme    | https://symp-sme.ingress.docker    |
 |Camunda                 | https://localhost/camunda| https://symp-camunda.ingress.docker|
-|Security Analysis Engine| https://localhost/sae    | https://symp-sae.ingress.docker|
+|Security Analysis Engine| https://localhost/sae    | https://symp-sae.ingress.docker    |
 
 
 ## Roadmap
