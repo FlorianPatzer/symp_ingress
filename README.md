@@ -42,7 +42,27 @@ https://symp-*your_service_name*.ingress.docker
 |Camunda                 | https://localhost/camunda| https://symp-camunda.ingress.docker|
 |Security Analysis Engine| https://localhost/sae    | https://symp-sae.ingress.docker    |
 
+## Additional
+
+* SyMP Service Info
+
+| Service Name     | Docker Container     | Exposed Ports       |
+|------------------|----------------------|---------------------|
+| Analysis Hub     | symp-ah              | 8545                |
+| Neo4j            | symp-neo4j           | 7474, 7678          |
+| Fuseki           | symp-fuseki          | 3030                |
+| SAE              | symp-sae             | 8543                |
+| SME              | symp-sme             | 8544                |
+| SME GUI          | symp-sme-gui         |                     |
+| Client Frontend  | symp-client-frontend |                     |
+| Client Backend   | symp-client-backend  |                     |
+| Mongo            | symp-mongo           | 27017               |
+| FTP              | symp-ftp             | 20, 21, 21100-21110 |
+| Camunda          | symp-camunda         | 8080                |
+| MySQL            | symp-mysql           | 3306                |
+| Filezilla Client | symp-filezilla       | 5800                |
+| nginx            | symp-nginx           | 80, 443             |
 
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://gitlab-ext.iosb.fraunhofer.de/symp/symp-ingress/-/issues) for a list of proposed features (and known issues).
