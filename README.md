@@ -34,13 +34,15 @@ https://symp-*your_service_name*.ingress.docker
 
 ## Usage
 
-| Service Name           | Localhost address        | Subdomain address                  |
-|------------------------|--------------------------|------------------------------------|
-|Client                  | https://localhost/client | https://symp-client.ingress.docker |
-|Analysis Hub Frontend   | https://localhost/ah     | https://symp-ah.ingress.docker     |
-|System Model Engine     | https://localhost/sme    | https://symp-sme.ingress.docker    |
-|Camunda                 | https://localhost/camunda| https://symp-camunda.ingress.docker|
-|Security Analysis Engine| https://localhost/sae    | https://symp-sae.ingress.docker    |
+*Note: This projects is an attemt to resemble the configuration created in [Rancher](https://rancher.k8s.ilt-dmz.iosb.fraunhofer.de/g/clusters).*
+
+| Service Name           | Localhost address        | Subdomain address                  | Subdomain address                                 |
+|------------------------|--------------------------|------------------------------------|---------------------------------------------------|
+|Client                  | https://localhost/client | https://symp-client.ingress.docker |https://symp-client.k8s.ilt-dmz.iosb.fraunhofer.de |
+|Analysis Hub Frontend   | https://localhost/ah     | https://symp-ah.ingress.docker     |https://symp-ah.k8s.ilt-dmz.iosb.fraunhofer.de     |
+|System Model Engine     | https://localhost/sme    | https://symp-sme.ingress.docker    |https://symp-sme.k8s.ilt-dmz.iosb.fraunhofer.de    |
+|Camunda                 | https://localhost/camunda| https://symp-camunda.ingress.docker|https://symp-camunda.k8s.ilt-dmz.iosb.fraunhofer.de|
+|Security Analysis Engine| https://localhost/sae    | https://symp-sae.ingress.docker    |https://symp-sae.k8s.ilt-dmz.iosb.fraunhofer.de    |
 
 ## Roadmap
 
