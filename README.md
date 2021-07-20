@@ -36,7 +36,7 @@ https://symp-*your_service_name*.ingress.docker
 
 *Note: This projects is an attemt to resemble the configuration created in [Rancher](https://rancher.k8s.ilt-dmz.iosb.fraunhofer.de/g/clusters).*
 
-| Service Name           | Localhost address        | Subdomain address                  | Subdomain address                                 |
+| Service Name           | Localhost address        | Subdomain address                  | Rancher deployment                                |
 |------------------------|--------------------------|------------------------------------|---------------------------------------------------|
 |Client                  | https://localhost/client | https://symp-client.ingress.docker |https://symp-client.k8s.ilt-dmz.iosb.fraunhofer.de |
 |Analysis Hub            | https://localhost/ah     | https://symp-ah.ingress.docker     |https://symp-ah.k8s.ilt-dmz.iosb.fraunhofer.de     |
