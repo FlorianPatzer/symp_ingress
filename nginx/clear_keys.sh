@@ -1,6 +1,4 @@
 #!/bin/bash
-rm ./ssl/cert.crt
-rm ./ssl/keystore.jks
-rm ./ssl/client.p12
-rm ./ssl/private.pem
+rm -r ./ssl
+rm -r ./ssl_wildcard
 echo Done
