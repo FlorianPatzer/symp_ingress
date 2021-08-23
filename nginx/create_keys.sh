@@ -33,7 +33,7 @@ openssl pkcs12 -in ./ssl/ingress.p12 -out ./ssl/cert.crt -nokeys -password pass:
 #Creating wildcard cert for address *service-name*.ingress.docker
 mkdir ssl_wildcard
 
-keytool -genkeypair -keyalg RSA -keysize 2048 -alias SympIngress -dname "CN=*.ingress.docker,OU=$server_ou,O=$server_o,C=$server_c" "SAN=DNS:$server_address,$custom_addresses" -validity $cert_validity -keystore ./ssl_wildcard/keystore.jks -storepass $key_store_pass -keypass $key_store_pass -deststoretype pkcs12
+keytool -genkeypair -keyalg RSA -keysize 2048 -alias SympIngress -dname "CN=*.ingress.docker,OU=$server_ou,O=$server_o,C=$server_c" -ext "SAN=DNS:$server_address,$custom_addresses" -validity $cert_validity -keystore ./ssl_wildcard/keystore.jks -storepass $key_store_pass -keypass $key_store_pass -deststoretype pkcs12
 
 keytool -importkeystore -srckeystore ./ssl_wildcard/keystore.jks -srcstorepass $key_store_pass -destkeystore ./ssl_wildcard/ingress.p12 -deststorepass $key_store_pass -deststoretype pkcs12
 
