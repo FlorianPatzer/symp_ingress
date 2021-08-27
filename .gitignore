@@ -1,0 +1,9 @@
+nginx/ssl/cert.crt
+nginx/ssl/ingress.p12
+nginx/ssl/keystore.jks
+nginx/ssl/private.pem
+nginx/ssl_wildcard/cert.crt
+nginx/ssl_wildcard/ingress.p12
+nginx/ssl_wildcard/keystore.jks
+nginx/ssl_wildcard/private.pem
+
